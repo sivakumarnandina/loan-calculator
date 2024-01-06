@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <h1 ><b>LOAN CALCULATOR</b></h1>
+    <form>
+        <label for="principal">Loan Amount</label>
+        <div><input type="number" id="principal" placeholder="Enter loan amount(in RS)"></div><br>
+        <label for="rate">Interest Rate</label>
+        <div><input type="number" id="rate" placeholder="Enter the rate(%)"></div><br>
+        <label for="time">Time</label>
+        <div><input type="number" id="time" placeholder="time to pay(in days)"></div><br>
+        <button class="demo" type="button" onclick="calculateLoan()">Calculate</button>
+        <input class="demo1" type="reset" value="Reset">
+    </form>    
+
+    <table>
+        <tr class="m">
+            <td class="a"><b>>>PRINCIPAL VALUE:</b></td>
+            <td class="b">RS<span class="m4"></span></td>
+        </tr>
+        <tr>
+            <td class="a"><b>>>TOTAL INTEREST:</b></td>
+            <td class="b">RS<span class="m5"></span></td>
+        </tr>
+        <tr>
+            <td class="a"><b>>>TOTAL VALUE:</b></td>
+            <td class="b">RS<span class="m6"></span></td>
+        </tr>
+    </table>
+
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
